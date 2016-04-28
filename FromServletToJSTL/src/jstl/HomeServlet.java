@@ -29,12 +29,12 @@ public class HomeServlet extends HttpServlet {
 				 List<Employee> empList = new ArrayList<Employee>();
 			        Employee emp1 = new Employee();
 			        emp1.setId(1);
-			        emp1.setName("Pankaj");
+			        emp1.setName("Marta");
 			        emp1.setRole("Developer");
 			       
 			        Employee emp2 = new Employee();
 			        emp2.setId(2);
-			        emp2.setName("Meghna");
+			        emp2.setName("Malina");
 			        emp2.setRole("Manager");
 			        empList.add(emp1);
 			        empList.add(emp2);
