@@ -19,13 +19,21 @@
         Hello <b><c:out value="${param.txtname}" /></b>!
     </c:otherwise>
 </c:choose>
- <br> <br>
-<form action="MyServlet" method="get">
+ <br> from login2.jsp <br>
+ 
+<form action="MyCookie" method="get">
 		<table>
 			<tr>
 				<td>User name: </td>
 				<td bordercolor="blue"  bgcolor="green"  >
-				<input name="txtname" type="text" value="nn" style="background-color: yellow;"/>
+				<input name="loginName" type="text" value="Alina" style="background-color: yellow;"/>
+				<br></td>
+			</tr>
+			
+			<tr>
+				<td>User name: </td>
+				<td bordercolor="blue"  bgcolor="green"  >
+				<input name="prodName" type="text" value="Gipfel" style="background-color: yellow;"/>
 				<br></td>
 			</tr>
 			
@@ -33,7 +41,7 @@
 			<tr>
 				<td>Password: </td>
 				<td bordercolor="blue"  bgcolor="green"  >
-				<input name="password" type="text"  value="pp" style="background-color: yellow;"/>
+				<input name="gramm" type="text"  value="12" style="background-color: yellow;"/>
 				<br></td>
 			</tr>
 			
