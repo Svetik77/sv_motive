@@ -6,28 +6,31 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title> show </title>
+<title> displaySession </title>
 </head>
 <body>
-show <br><br>
+displaySession <br><br>
 
 <br><a href="addProduct.jsp"> link addProduct.jsp </a><br><br><br>
 <br><a href="mysession.jsp"> link addProduct.jsp </a><br><br><br>
+<br>-----------------------------------<br>
+it is ok=> loginName : <c:out value="${sessionScope.loginName}" /> <br>
+it is ok=>  prodName : <c:out value="${sessionScope.prodName}" /> <br>
 
-
+             <br>  it is ok=>     ${sessionScope.prodName} <br><br><br>
+<br>-----------------------------------<br><br>
         <table border="1" width="2" cellspacing="3" cellpadding="2">
             <thead>
                 <tr bgcolor="yellow">
                     <th>NAME</th>
                     <th> NAME</th>
-                    <th>GRAMM</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>${param.loginName }</td>
-                    <td>${param.prodName }</td>
-                    <td>${param.gramm }</td>
+                     <td>${param.loginName }</td>
+                    <td>${param.prodName }</td> 
+                 
                 </tr>
               
             </tbody>
@@ -35,23 +38,5 @@ show <br><br>
         <br />
 
 <br>-----------------------------------<br>
-<c:forEach items="${cookie}" var="currentCookie">  
-    Cookie name as map entry key: ${currentCookie.key}<br/>
-    Cookie object as map entry value: ${currentCookie.value}<br/>
-    Name property of Cookie object: ${currentCookie.value.name}<br/>
-    Value property of Cookie object: ${currentCookie.value.value}<br/>
-</c:forEach>
-
-<h3>List of all the available Cookies</h3>
-    <ul>
-    <c:forEach var="cookies" items="${cookie}">
-        <li>
-            <c:out value="${cookies.key}"/>: 
-                    Object=<c:out value="${cookies.value}"/>, <br>
-                    value=<c:out value="${cookies.value.value}"/>
-                    <br><br>
-        </li>
-    </c:forEach>
-    </ul>
 </body>
 </html>
