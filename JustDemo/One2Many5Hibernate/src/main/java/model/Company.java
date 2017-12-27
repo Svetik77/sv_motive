@@ -14,6 +14,7 @@ import javax.persistence.Table;
 
 // model.Company
 
+
 @Entity
 @Table(name="company", schema = "one2many", catalog = "jpademo")
 public class Company {
