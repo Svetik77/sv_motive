@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<!-- <persistence-unit name="One2Many5Hibernate"> -->
+
+
+	<persistence-unit name="One2Many5">
+		<class>model.Company</class>
+		<class>model.Employee</class>
+		<properties>
+
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/jpademo" /> <!-- BD Mane -->
+			<property name="javax.persistence.jdbc.user" value="postgres" /> <!-- DB User -->
+			<property name="javax.persistence.jdbc.password" value="sveta" /> <!-- DB Password -->
+
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL92Dialect " /> <!-- DB Dialect -->
+			<property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create / create-drop / update -->
+
+			<property name="hibernate.show_sql" value="true" /> <!-- Show SQL in console -->
+			<property name="hibernate.format_sql" value="true" /> <!-- Show SQL formatted -->
+
+			<!-- <property name="hibernate.hbm2ddl.auto" value="update" /> -->
+			<property name="hibernate.default_schema" value="one2many"></property>
+
+			<property name="eclipselink.ddl-generation" value="drop-and-create-tables" />
+		</properties>
+
+	</persistence-unit>
+
+
+</persistence>
